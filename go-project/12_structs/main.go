@@ -7,7 +7,7 @@ import "fmt"
 type Trade struct {
 	// if property starts with captal letter that's poblic otherwise is private
 	Symbol string  // stock symbol
-	Value  int     // Number of shares
+	Volume int     // Number of shares
 	Price  float64 // Trade Price
 	Buy    bool    // true if buy trade. false if sell trade
 }
@@ -21,7 +21,7 @@ func main() {
 	fmt.Println("=======================================")
 
 	t2 := Trade{
-		Value:  15,
+		Volume: 15,
 		Symbol: "MICROSOFT",
 		Price:  99.97,
 		Buy:    false, // trailing come is nandatory
